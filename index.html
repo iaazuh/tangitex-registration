@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tangitex Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="">
+                    <img src="images/logo33.JPG" height="60px"  width="350px">
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href=""> &#8592; Go Back</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="images/hamburger-fotor-bg-remover-20230609154159.png" width="30px" height="30px" onclick="menutoggle()">
+        </div>    
+    </div>
+    <div class="small-container">
+        <div class="popup" id="popup">
+            <h2>Enter Request Details Here</h2>
+            <ul>
+                <li>
+                    <p href="">Enter Full Name Here</p><input class="dropdown-input" placeholder="Enter Full Name Here" type="text" name="" id="">    
+                </li>
+                <li><p href="">Email Address</p>
+                    <input class="dropdown-input" placeholder="Email Address" type="text" name="" id="">
+                </li>
+                <br>
+                <li ><p href="">Request Type</p>
+                    <select class="dropdown-gender" name="Request Type" id="">
+                        <option value="Web Design">Web Design</option>
+                        <option value="App Development">App Development</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Graphics Design">Graphics Design</option>
+                        <option value="Digital Sales Campaign">Digital Sales Campaign</option>
+                        <option value="Technical Support">Technical Support</option>
+                    </select>
+                </li>
+                <br>
+                <li><p href="">Request Details</p>
+                    <textarea class="textArea" name="Request Details" id="" placeholder="Request Details" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <button type="submit" class="btn" onclick="openModal()">Register</button>
+                </li>
+            </ul>
+            <div class="modal" id="modal">
+                <img src="Images/tick.jpg" alt="">
+                <h2>Thank You!</h2>
+                <p>Your infomation has been successfully submitted.</p>
+                <button type="submit" class="btn" onclick="closeModal()">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <hr>
+            <p class="copyright">Copyright &copy; Tangitex Technologies 2023</p>
+        </div>
+    </div>
+    
+    <script text="text/javascript" src="main.js"></script>
+</body>
+</html>
